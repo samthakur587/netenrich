@@ -10,7 +10,7 @@ COPY  requirement.txt .
 RUN pip install --upgrade pip
 
 # Install the Python dependencies
-RUN pip install -r requirements.txt
+RUN pip install -r requirement.txt
 
 # Copy the test.py file to the container
 COPY test.py .
