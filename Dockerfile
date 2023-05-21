@@ -15,8 +15,7 @@ RUN pip install -r requirement.txt
 # Copy the test.py file to the container
 COPY test.py .
 
-# Expose the port on which your FastAPI app listens (if applicable)
-EXPOSE 8000
+
 
 # Set the entrypoint command to run your FastAPI app
 CMD ["uvicorn", "test:app","--reload"]
