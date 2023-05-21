@@ -18,4 +18,4 @@ COPY test.py .
 
 
 # Set the entrypoint command to run your FastAPI app
-CMD ["uvicorn", "test:app","--reload"]
+CMD ["uvicorn", "test:app","--host 0.0.0.0"]
