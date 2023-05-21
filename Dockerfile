@@ -8,7 +8,7 @@ WORKDIR /app
 COPY  requirement.txt .
 
 # Install the Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install -r requirements.txt
 
 # Copy the test.py file to the container
 COPY test.py .
