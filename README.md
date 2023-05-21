@@ -1,3 +1,36 @@
+# Installation 
+
+1. **Prerequisites**: Start by listing the prerequisites that need to be installed on the user's machine. For example, mention that Docker and Docker Compose should be installed.
+
+2. **Clone the Repository**: Instruct users to clone or download your GitHub repository to their local machine.
+
+3. **Build the Docker Image**: Provide the command to build the Docker image using the Dockerfile in your repository. For example:
+
+   ```shell
+   docker build -t your-image-name .
+   ```
+
+   Explain that `your-image-name` should be replaced with the desired name for your Docker image.
+
+4. **Run the Docker Container**: Describe the command to run a Docker container using the built image. Specify any necessary flags or environment variables. For example:
+
+   ```shell
+   docker run -d -p 8000:8000 --name your-container-name your-image-name
+   ```
+
+   Explain that `your-container-name` should be replaced with the desired name for your Docker container.
+
+5. **Access the App**: Explain how users can access your app in the Docker container. For example, if your app is running on port 8000, mention that they can access it by visiting `http://localhost:8000` in their web browser.
+
+6. **Stop and Remove the Container**: Provide instructions on how to stop and remove the Docker container once they are done. For example:
+
+   ```shell
+   docker stop your-container-name
+   docker rm your-container-name
+   ```
+
+   Explain that `your-container-name` should be replaced with the name of the running container.
+
 # Documentation for Api 
 Sure! Here's the documentation for all the APIs you provided:
 
